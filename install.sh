@@ -886,7 +886,7 @@ until [[ $setupmail == "yes" ]] || [[ $setupmail == "no" ]]; do
 echo "  Q. Do you want to configure mail server settings now? This can be done later too. "
 echo -n "     * You will need mail server address, port, user and password among other items. (y/n) "
 #read -r setupmail
-setupmail
+setupmail='n'
 case $setupmail in
   [yY] | [yY][Ee][Ss] )
     echo -n "  Outgoing mailserver address:"
